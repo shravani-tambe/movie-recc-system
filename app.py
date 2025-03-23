@@ -41,5 +41,5 @@ if st.button('Show Recommendation'):
     
     for i in range(5):
         with cols[i]:
-            st.image(recommended_movie_posters[i], use_column_width=True)  # Ensures uniform width
+            st.image(recommended_movie_posters[i], use_container_width=True)  # Ensures uniform width
             st.markdown(f"<p style='text-align: center; font-weight: bold;'>{recommended_movie_names[i]}</p>", unsafe_allow_html=True)
